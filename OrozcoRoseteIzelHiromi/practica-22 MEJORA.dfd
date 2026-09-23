@@ -1,0 +1,61 @@
+ Dfd (c)
+1
+1
+1
+0
+0
+4
+1
+26
+'ingresa el host inicial:'
+5
+1
+12
+ hostinicial
+4
+1
+24
+'ingresa el host final:'
+5
+1
+9
+hostfinal
+8
+1
+6
+octeto
+1
+11
+hostinicial
+1
+9
+hostfinal
+1
+1
+1
+6
+1
+15
+listaIP(octeto)
+6
+octeto
+10
+8
+1
+1
+i
+1
+11
+hostinicial
+1
+9
+hostfinal
+1
+1
+1
+4
+1
+25
+'192.168.1.' , listaIP(i)
+10
+1

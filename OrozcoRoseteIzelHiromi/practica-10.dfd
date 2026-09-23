@@ -1,0 +1,139 @@
+ Dfd (c)
+1
+1
+1
+0
+0
+4
+1
+32
+'Ingrese el nombre del proyecto'
+5
+1
+17
+nombredelproyecto
+4
+1
+51
+'Ingrese las horas totales de desarrollo estimadas'
+5
+1
+5
+horas
+4
+1
+27
+'Ingrese el costo por hora'
+5
+1
+9
+costohora
+4
+1
+31
+'Ingrese su presupuesto maximo'
+5
+1
+11
+presupuesto
+4
+1
+29
+'Ingrese plazo maximo (dias)'
+5
+1
+11
+plazomaximo
+6
+2
+14
+JORNADA_DIARIA
+1
+8
+11
+DIAS_SEMANA
+1
+5
+6
+3
+8
+subtotal
+15
+horas*costohora
+11
+imprevistos
+13
+subtotal*0.12
+9
+descuento
+13
+subtotal*0.05
+6
+3
+14
+costoTotalNeto
+34
+subtotal + imprevistos - descuento
+3
+IVA
+19
+costoTotalNeto*0.16
+9
+granTotal
+20
+costoTotalNeto + IVA
+6
+3
+21
+diasTotalesRequeridos
+27
+TRUNC(horas/JORNADA_DIARIA)
+14
+horasSobrantes
+24
+horas mod JORNADA_DIARIA
+16
+semanasLaborales
+40
+TRUNC(diasTotalesRequeridos/DIAS_SEMANA)
+6
+3
+17
+presupuestoViable
+22
+granTotal<=presupuesto
+14
+horasSobrantes
+24
+horas mod JORNADA_DIARIA
+17
+semanasLaboralesC
+40
+TRUNC(diasTotalesRequeridos/DIAS_SEMANA)
+6
+3
+17
+presupuestoViable
+22
+granTotal<=presupuesto
+11
+plazoViable
+34
+diasTotalesRequeridos<=plazomaximo
+16
+proyectoAprovado
+33
+presupuestoViable AND plazoViable
+4
+1
+114
+'INFORME FINANCIERO: ' , 'subtotal ' , subtotal , 'costo total neto ' , costoTotalNeto , 'Gran Total ' , granTotal
+4
+1
+124
+'DESGLOSE TIEMPO DE ENTREGA: ' , 'Dias totales ' , diasTotalesRequeridos , 'Semanas laborales completas ' , semanasLaborales
+4
+1
+71
+'APROVACION DEL PROYECTO: '  , 'proyecto aprovado: ' , proyectoAprovado
+1
